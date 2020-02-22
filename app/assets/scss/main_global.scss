@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1200px;
+}
+
+.df {
+  display: flex;
+}
+
+.aic {
+  align-items: center;
+}
+
+.ma {
+  margin: 0 auto;
+}
+
+.tc {
+  text-align: center;
+}
+
+.cp {
+  cursor: pointer;
+}
+
+.simons-game .h1 {
+  padding-top: 5rem;
+}
+
+.text {
+  font-size: 1.5rem;
+}
+
+.label-dropdown {
+  padding-right: 1rem;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-simons {
+  width: 300px;
+  height: 300px;
+}
+
+.red {
+  background: #e71610;
+}
+
+.green {
+  background: #93d36e;
+}
+
+.blue {
+  background: #1464f7;
+}
+
+.yellow {
+  background: #f9f561;
+}
+
+.game-field {
+  width: 602px;
+  height: 602px;
+  flex-flow: row wrap;
+  border: 1px solid #000;
+  margin-top: 1rem;
+
+  & .button-simons {
+    padding: 0;
+    border: 0;
+
+    &:nth-child(2n + 1) {
+      border-right: 1px solid #000;
+    }
+
+    &:first-child,
+    &:nth-child(2) {
+      border-bottom: 1px solid #000;
+    }
+
+    &.active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.start-button {
+  margin-top: 1rem;
+}
